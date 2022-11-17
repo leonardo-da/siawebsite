@@ -6,7 +6,7 @@ import impresora from "../assets/img/impresora.jpg";
 
 const App = () => {
   return (
-      <Carousel fade className="w-75 position-absolute top-50 start-50 translate-middle">
+      <Carousel fade className="w-75 position-absolute top-50 start-50 translate-middle" style={{ marginTop:'2rem' }}>
         <Carousel.Item>
           <img className="w-100 col" src={ensamble} alt="First slide"/>
           <Carousel.Caption>
