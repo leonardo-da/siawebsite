@@ -6,7 +6,7 @@ const App = () => {
     <>
       {[false].map((expand) => (
         <div class="fixed-top">
-        <Navbar key={expand} bg="white" expand={expand} className="py-3">
+        <Navbar key={expand} bg="white" expand={expand} className="py-4">
           <Container fluid className="mx-5">
             <Navbar.Brand class="text-decoration-none link-dark" as={Link} to="/"><h2 style={{ marginTop:'1rem' }}>SIA</h2></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  />

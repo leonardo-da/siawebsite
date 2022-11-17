@@ -3,8 +3,8 @@ import { Card,Button } from "react-bootstrap";
 const App = () =>{
     return(
     <>
-    <div style={{ marginTop:'7rem' }}>
-    <div class="row row-cols-2 g-4 mx-5 mb-5 d-flex justify-content-evenly">
+    <div style={{ marginTop:'8rem' }} >
+    <div class="row row-cols-2 g-4 mx-5 mb-4 d-flex justify-content-evenly">
       <Card style={{ width: '18rem' }} >
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
