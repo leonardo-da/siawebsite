@@ -6,9 +6,9 @@ const App = () => {
     <>
       {[false].map((expand) => (
         <div class="fixed-top">
-        <Navbar key={expand} variant="dark" bg="dark" expand={expand} className="py-4">
+        <Navbar key={expand} bg="white" expand={expand} className="py-3">
           <Container fluid className="mx-5">
-            <Navbar.Brand as={Link} to="/">SIA</Navbar.Brand>
+            <Navbar.Brand class="text-decoration-none link-dark" as={Link} to="/"><h2 style={{ marginTop:'1rem' }}>SIA</h2></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -24,6 +24,8 @@ const App = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link as={Link} to="/Servicios">Servicios</Nav.Link>
                   <Nav.Link as={Link} to="/Productos">Productos</Nav.Link>
+                  <Nav.Link as={Link} to="/Soporte">Soporte</Nav.Link>
+
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

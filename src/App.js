@@ -3,6 +3,7 @@ import Layout from "./Components/navbar";
 import Index from "./Pages/firstpage";
 import Servicios from "./Pages/servicios";
 import Productos from "./Pages/productos";
+import Soporte from "./Pages/soporte";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
             <Route index element={<Index/>}/>
             <Route path='servicios' element={<Servicios/>}/>
             <Route path='productos' element={<Productos/>}/>
+            <Route path='soporte' element={<Soporte/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
