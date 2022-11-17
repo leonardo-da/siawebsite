@@ -4,6 +4,7 @@ import Index from "./Pages/firstpage";
 import Servicios from "./Pages/servicios";
 import Productos from "./Pages/productos";
 import Soporte from "./Pages/soporte";
+import Contacto from "./Pages/contacto";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path='servicios' element={<Servicios/>}/>
             <Route path='productos' element={<Productos/>}/>
             <Route path='soporte' element={<Soporte/>}/>
+            <Route path='contacto' element={<Contacto/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

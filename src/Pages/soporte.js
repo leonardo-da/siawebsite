@@ -7,8 +7,9 @@ const App = () =>{
     return(
     <>
     <div style={{ marginTop:'7rem' }}>
-      <div className="m-5">
-        <h1>Bienvenido a soporte</h1>
+    <div id="rec">*</div>
+      <div className="m-4">
+        <h1 className="text-center">Bienvenido a soporte</h1>
 
         <div className="text-center mt-5">
           <h4 >¿Necesitas ayuda de forma remota?</h4>

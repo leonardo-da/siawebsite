@@ -25,6 +25,7 @@ const App = () => {
                   <Nav.Link as={Link} to="/Servicios">Servicios</Nav.Link>
                   <Nav.Link as={Link} to="/Productos">Productos</Nav.Link>
                   <Nav.Link as={Link} to="/Soporte">Soporte</Nav.Link>
+                  <Nav.Link as={Link} to="/Contacto">Contacto</Nav.Link>
 
                 </Nav>
               </Offcanvas.Body>
