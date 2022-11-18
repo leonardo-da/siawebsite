@@ -1,13 +1,38 @@
-import { Card,Button } from "react-bootstrap";
+import { Card,Button,Modal,Form } from "react-bootstrap";
+import React, { useState } from 'react';
 
 import LogoTeam from "../assets/img/teamViewerLogo.png";
 import LogoAny from "../assets/img/anydeskLogo.png";
 
 const App = () =>{
+    const [show, setShow] = useState(false);
+  
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const [datos, setDatos] = useState({
+      password: ''
+  })
+
+  const handleInputChange = (event) => {
+      setDatos({
+          ...datos,
+          [event.target.name] : event.target.value
+      })
+  }
+
+  const enviarDatos = (event) => {
+      event.preventDefault()
+      if(datos.password === "Sia5678"){
+        console.log("a prro");
+        window.location.href = "https://www.youtube.com/";
+      }
+  }
+
     return(
     <>
     <div style={{ marginTop:'7rem' }}>
-    <div id="rec">*</div>
+    <div onClick={handleShow}>*</div>
       <div className="m-4">
         <h1 className="text-center">Bienvenido a soporte</h1>
 
@@ -35,12 +60,31 @@ const App = () =>{
                 </Card.Text>
                 <Button variant="danger mx-2" href="https://anydesk.com/es/downloads/thank-you?dv=win_exe" target="_blank">Windows</Button>
                 <Button variant="danger mx-2" href="https://anydesk.com/es/downloads/thank-you?dv=mac_dmg" target="_blank">Mac</Button>
-
               </Card.Body>
           </Card>
         </div>    
         </div>
         </div>
+
+        <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false} >
+        <Modal.Header closeButton>
+          <Modal.Title>Soporte</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={enviarDatos}>
+          <div class="d-flex justify-content-center">
+            <input type="password" placeholder="Contraseña" className="form-control mt-2 mx-5 w-75" onChange={handleInputChange} name="password"/>
+          </div>
+            
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose} >Cerrar</Button>
+          <Button type="submit" className="btn btn-primary">Ingresar</Button>
+        </Modal.Footer>
+      </Modal>
+
+
     </div>
     </>
       
