@@ -6,29 +6,33 @@ import impresora from "../assets/img/impresora.jpg";
 
 const App = () => {
   return (
-      <Carousel fade className="w-75 position-absolute top-50 start-50 translate-middle" style={{ marginTop:'2rem' }}>
+    <>
+    <div style={{ marginTop:'10rem' }} className="mb-4">
+      <Carousel fade className="w-75 mx-auto" >
         <Carousel.Item>
-          <img className="w-100 col" src={ensamble} alt="Ensamble"/>
+          <img className="d-block w-100" src={ensamble} alt="Ensamble"/>
           <Carousel.Caption>
             <h3 >PC</h3>
             <p>Ensamble, reparación de equipos de computo.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="w-100" src={redes} alt="Redes"/>
+          <img className="d-block w-100" src={redes} alt="Redes"/>
           <Carousel.Caption>
             <h3>REDES</h3>
             <p>Diseño, instalación y configuracion de redes informaticas.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="w-100" src={impresora} alt="Impresoras"/>
+          <img className="d-block w-100" src={impresora} alt="Impresoras"/>
           <Carousel.Caption>
             <h3>IMPRESORAS</h3>
             <p>Mantenimiento, reparación y consumibles para su impresora.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
+      </>
   );
 }
 
