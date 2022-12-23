@@ -7,7 +7,7 @@ import LogoAny from "../assets/img/anydeskLogo.png";
 const App = () =>{
     return(
     <>
-    <div style={{ marginTop:'7rem' }} className="mb-5">
+    <div style={{ marginTop:'9rem' }} className="mb-5">
       <div className="m-4">
         <h1 className="text-center">Bienvenido a soporte</h1>
 

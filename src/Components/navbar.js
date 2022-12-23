@@ -30,7 +30,7 @@ const App = () => {
     <>
       {[false].map((expand) => (
         <div class="fixed-top">
-        <Navbar key={expand} bg="black" variant="dark" expand={expand}>
+        <Navbar key={expand} bg="dark" variant="dark" expand={expand}>
           <Container fluid className="mx-5">
             <Navbar.Brand as={Link} to="/" className="mt-2 ms-4"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  />
@@ -51,7 +51,7 @@ const App = () => {
                   <Nav.Link className={`${pathname === '/Contacto' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Contacto">Contacto</Nav.Link>
                   <NavDropdown title="Ingresar" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                       <Form className="d-flex">
-                        <Form.Control onChange={handleInputChange} name="password" placeholder="Contrasena" className="mx-2" type="password" />
+                        <Form.Control onChange={handleInputChange} name="password" placeholder="Contraseña" className="mx-2" type="password" />
                         <Button variant="outline-success" className="me-2" onClick={enviarDatos}>Ingresar</Button>
                       </Form>
                   </NavDropdown>
