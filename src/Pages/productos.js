@@ -1,4 +1,4 @@
-import { Card,Col,Row,Button, Container} from "react-bootstrap";
+import { Card,Col,Row,Container} from "react-bootstrap";
 
 import IMG0 from '../assets/img/disenop.png';
 import IMG1 from '../assets/img/videojuegos.png';
@@ -8,12 +8,12 @@ import IMG4 from '../assets/img/server.png';
 import IMG5 from '../assets/img/alto.png';
 import IMG6 from '../assets/img/alldiseno.png';
 import IMG7 from '../assets/img/allalto.png';
-import IMG8 from '../assets/img/estufa.png';
-import IMG9 from '../assets/img/estufa.png';
-import IMG10 from '../assets/img/estufa.png';
-import IMG11 from '../assets/img/estufa.png';
-import IMG12 from '../assets/img/estufa.png';
-import IMG13 from '../assets/img/estufa.png';
+import IMG8 from '../assets/img/almacenamiento.png';
+import IMG9 from '../assets/img/mouseytec.png';
+import IMG10 from '../assets/img/eliminadores.png';
+import IMG11 from '../assets/img/componentes.png';
+import IMG12 from '../assets/img/toner.png';
+import IMG13 from '../assets/img/tinta.png';
 import IMG14 from '../assets/img/kaspersky.png';
 import IMG15 from '../assets/img/office.png';
 import IMG16 from '../assets/img/diseno.png';
@@ -38,16 +38,16 @@ const App = () =>{
   ]
 
   const accesorios = [
-    {nameI:`${IMG8}`,title:"Almacenamiento",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG9}`,title:"Toners",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG10}`,title:"Antivirus",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG11}`,title:"Diseño",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG12}`,title:"Office",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG13}`,title:"Estufas, bocinas de carro y mas",contenent:"hay babosa me asustas burra"}
+    {nameI:`${IMG8}`,title:"Almacenamiento",contenent:"Si lo que buscas es donde tener un respaldo de tu información y/o aumentar las capacidades de tu equipo, agregar componentes de nueva generación es ideal para mejorar la velocidad y el almacenamiento."},
+    {nameI:`${IMG9}`,title:"Teclados y mouses",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG10}`,title:"Eliminadores",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG11}`,title:"Componentes",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG12}`,title:"Toners",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG13}`,title:"Tintas",contenent:"hay babosa me asustas burra"},
   ]
 
   const software = [
-    {nameI:`${IMG14}`,title:"Antivirus",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG14}`,title:"Antivirus",contenent:"A medida que las tecnologías avanzan nuevos riesgos de delitos informáticos aparecen, así que un software que es diseñado para detectar, evitar y eliminar malware te será de mucha ayuda para la integridad de tu información."},
     {nameI:`${IMG15}`,title:"Office",contenent:"hay babosa me asustas burra"},
     {nameI:`${IMG16}`,title:"Diseño",contenent:"hay babosa me asustas burra"}
   ]
