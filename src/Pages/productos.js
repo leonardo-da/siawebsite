@@ -34,28 +34,29 @@ const App = () =>{
 
   const allinone = [
     {nameI:`${IMG6}`,title:"Diseño",contenent:"Si trabajas en un lugar pequeño, el espacio en su escritorio puede ser muy limitado y una PC puede ocupar demasiado espacio. Entonces una all in one será tu mejor opción."},
-    {nameI:`${IMG7}`,title:"Alto desempeño",contenent:"hay babosa me asustas burra"}
+    {nameI:`${IMG7}`,title:"Alto desempeño",contenent:"El mejor desempeño en un espacio reducido y para ejecutar todas las tareas posibles y al mismo tiempo mejorando el tiempo de la realización de tus tareas."}
   ]
 
   const accesorios = [
     {nameI:`${IMG8}`,title:"Almacenamiento",contenent:"Si lo que buscas es donde tener un respaldo de tu información y/o aumentar las capacidades de tu equipo, agregar componentes de nueva generación es ideal para mejorar la velocidad y el almacenamiento."},
-    {nameI:`${IMG9}`,title:"Teclados y mouses",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG10}`,title:"Eliminadores",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG11}`,title:"Componentes",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG12}`,title:"Toners",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG13}`,title:"Tintas",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG9}`,title:"Teclados y mouses",contenent:"Los Periféricos indispensables para tu PC y all in one o incluso para tu portátil, ya sea que los necesitas de forma alámbrica o inalámbrica."},
+    {nameI:`${IMG10}`,title:"Eliminadores",contenent:"El cargador para el modelo de tu equipo Windows o Mac, cuál sea que necesites tanto original como compatible y del voltaje y amperaje correcto para que tu equipo funcione correctamente."},
+    {nameI:`${IMG11}`,title:"Componentes",contenent:"Necesitas actualizar tu equipo o deseas armar una PC por tu cuenta, la mejor opción es conseguir los componentes de mejor calidad y más actualizados para que tu equipo funcione correctamente por mucho tiempo."},
+    {nameI:`${IMG12}`,title:"Toners",contenent:"Tienes una impresora que utilice tóner, cualquier modelo de tóner que necesites para tus impresoras originales o compatibles de la mejor calidad."},
+    {nameI:`${IMG13}`,title:"Tintas",contenent:"Tienes una impresora que utilice tintas, cual sea el modelo de tinta que use tu impresora y el color que necesites, al igual que la marca."}
   ]
 
   const software = [
     {nameI:`${IMG14}`,title:"Antivirus",contenent:"A medida que las tecnologías avanzan nuevos riesgos de delitos informáticos aparecen, así que un software que es diseñado para detectar, evitar y eliminar malware te será de mucha ayuda para la integridad de tu información."},
-    {nameI:`${IMG15}`,title:"Office",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG16}`,title:"Diseño",contenent:"hay babosa me asustas burra"}
+    {nameI:`${IMG15}`,title:"Office",contenent:"La instalación del software más conocido y utilizado en el ámbito de la educación, el trabajo e incluso para el uso personal. Sus herramientas te ayudarán a realizar tus tareas más fáciles y rápidas."},
+    {nameI:`${IMG16}`,title:"Diseño",contenent:"Los mejores software de diseño para tu equipo, ya sea que lo necesites para la universidad o para tu empresa o quizá para tu uso personal, los mejores software para cualquier ámbito de diseño."}
   ]
 
     return(
       <Container>
         <div style={{marginTop:'9rem'}}>
-          <h1 className="border-bottom">Portátiles</h1>
+        <h1 className="text-center mb-5">Nuestros productos</h1>
+          <h2 className="border-bottom">Portátiles</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {portatiles.map((table) => {
               return (
@@ -73,7 +74,7 @@ const App = () =>{
         </div>
 
         <div className="mt-5">
-          <h1 className="border-bottom">PC's</h1>
+          <h2 className="border-bottom">PC's</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {PC.map((table) => {
               return (
@@ -91,7 +92,7 @@ const App = () =>{
         </div>
 
         <div className="mt-5">
-          <h1 className="border-bottom">All in one</h1>
+          <h2 className="border-bottom">All in one</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {allinone.map((table) => {
               return (
@@ -109,7 +110,7 @@ const App = () =>{
         </div>
 
         <div className="mt-5">
-          <h1 className="border-bottom">Periféricos y consumibles</h1>
+          <h2 className="border-bottom">Periféricos y consumibles</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {accesorios.map((table) => {
               return (
@@ -127,7 +128,7 @@ const App = () =>{
         </div>
 
         <div className="mt-5">
-          <h1 className="border-bottom">Software</h1>
+          <h2 className="border-bottom">Software</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {software.map((table) => {
               return (
