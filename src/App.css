@@ -1,6 +1,11 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Miss_clo';
+  src: url('../src/assets/Miss_clo.ttf');
 }
+
+/*.App {
+  text-align: center;
+}*/
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +41,34 @@
     transform: rotate(360deg);
   }
 }
+
+  @media screen and (min-device-width: 220px) and (max-device-width: 400px)  {
+    #titlebox{
+      font-size: .7rem ;
+    }
+    #textbox{
+      font-size: .8rem;
+    }
+  }
+  @media screen and (min-device-width: 401px) and (max-device-width: 500px)  {
+      #titlebox{
+        font-size: .8rem ;
+      }
+    }
+  @media screen and (min-device-width: 501px) and (max-device-width: 600px) {
+      #titlebox{
+        font-size: 1.2rem ;
+      }
+    }
+    @media screen and (min-device-width: 601px) {
+      #titlebox{
+        font-size: 3rem ;
+      }
+      #textbox{
+        font-size: 4rem;
+      }
+    }
+
+  #titlebox{
+    font-family: Miss_clo;
+  }

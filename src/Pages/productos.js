@@ -55,7 +55,7 @@ const App = () =>{
     return(
       <Container>
         <div style={{marginTop:'9rem'}}>
-        <h1 className="text-center mb-5">Nuestros productos</h1>
+        <h1 className="mb-5">Nuestros productos</h1>
           <h2 className="border-bottom">Portátiles</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {portatiles.map((table) => {

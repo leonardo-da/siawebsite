@@ -7,12 +7,11 @@ import { Button,Table } from "react-bootstrap";
 
 const App = () => {
   return (
-    
     <>
     <div className="bg-dark">
       <Container>
         <Row className="text-light">
-          <Col sm className="p-4" >
+          <Col sm className="p-4">
             <img style={{width:"50px"}} alt="logoSia" src={LogoNav}></img>
             <div className="mb-2">Nos comprometemos en brindarle un servicio de calidad en mantenimiento y reparación de sus equipos de cómputo.</div>
             <div>
@@ -47,42 +46,11 @@ const App = () => {
             <Button className="mt-3" variant="primary" as={Link} to="/Contacto">Contactanos</Button>
           </Col>
             <Col sm className="p-4">
-              <Table striped bordered hover className="text-white" variant="dark" size="sm">
-            <thead>
-              <tr>
-                <th colSpan={2}>Horario</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Lunes</td>
-                <td>9:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Martes</td>
-                <td>9:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Miércoles</td>
-                <td>9:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Jueves</td>
-                <td>9:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Viernes</td>
-                <td>9:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Sabado</td>
-                <td>9:00 - 13:00</td>
-              </tr>
-            </tbody>
-              </Table>
+              
             </Col>
         </Row>
       </Container>
+      <div className="text-white text-center pb-4">SIA © 2023 Todos los Derechos Reservados</div>
     </div>
     </>
   );

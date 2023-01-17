@@ -1,18 +1,17 @@
-import { tab } from "@testing-library/user-event/dist/tab";
-import { Card,Col,Row,Button, Container} from "react-bootstrap";
-import IMG0 from '../assets/img/almacenamiento.png';
-import IMG1 from '../assets/img/almacenamiento.png';
-import IMG2 from '../assets/img/almacenamiento.png';
-import IMG3 from '../assets/img/almacenamiento.png';
+import { Card,Col,Row,Container} from "react-bootstrap";
+import IMG0 from '../assets/img/preventivo.png';
+import IMG1 from '../assets/img/correctivo.png';
+import IMG2 from '../assets/img/servidor.png';
+import IMG3 from '../assets/img/redes.png';
 import IMG4 from '../assets/img/almacenamiento.png';
 
 const App = () =>{
   const tables = [
-    {nameI:`${IMG0}`,title:"Mantenimiento preventivo",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG1}`,title:"Mantenimiento correctivo",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG2}`,title:"Servidores",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG0}`,title:"Mantenimiento preventivo",contenent:"Notaste que tu equipo está más lento o que está más caliente de lo normal, un servicio preventivo podría solucionar el problema para evitar problemas futuros en tu equipo."},
+    {nameI:`${IMG1}`,title:"Mantenimiento correctivo",contenent:"Tu equipo ha sufrido algún daño, o simplemente dejo de encender, al realizar un servicio correctivo podremos determinar la falla del equipo y la solución para revivir tu equipo y que funcione de forma correcta."},
+    {nameI:`${IMG2}`,title:"Servidores",contenent:"Un servidor para tu empresa es más que necesario, adaptándolo a las necesidades de la empresa tanto para las tareas por realizar y la información que resguardar realizando las configuraciones adecuadas en el sistema operático y en la red."},
     {nameI:`${IMG3}`,title:"Redes",contenent:"hay babosa me asustas burra"},
-    {nameI:`${IMG4}`,title:"Estufas, Lavadoras y mas",contenent:"hay babosa me asustas burra"},
+    {nameI:`${IMG4}`,title:"Estufas, bocinas para coche y mas",contenent:"hay babosa me asustas burra"},
   ]
     return(
       <Container>
