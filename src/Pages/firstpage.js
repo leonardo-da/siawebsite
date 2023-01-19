@@ -1,5 +1,9 @@
 import '../App.css'
+import { Card,Button,Container} from "react-bootstrap";
 import fpt from "../assets/img/fpt.png";
+import IMG0 from '../assets/img/pago.png';
+import IMG1 from '../assets/img/pago.png';
+import IMG2 from '../assets/img/pago.png';
 
 const App = () => {
   return (
@@ -13,7 +17,44 @@ const App = () => {
       </div>
 
       <div>
-        <h3 className="text-center m-2 fs-4 font-weight-bold">Los productos y servicios de la mejor calidad para tus equipos e Impresoras.</h3>
+        <h4 className="text-center m-2">Los productos y servicios de la mejor calidad para tus equipos e Impresoras.</h4>
+      <div>
+      <Container>
+      <div className='mt-5 d-flex justify-content-evenly text-center'>
+        <Card style={{ width: '18rem' }} className="border-0">
+          <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG0} />
+            <Card.Body>
+              <Card.Title id='tc'>Opciones de pago</Card.Title>
+              <Card.Text id='txc' className="mb-4">
+                Soporte en remoto de ordenadores y otros dispositivos finales.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }} className="border-0">
+          <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG1} />
+            <Card.Body>
+              <Card.Title id='tc'>Opciones de pago</Card.Title>
+              <Card.Text id='txc' className="mb-4">
+                Soporte en remoto de ordenadores y otros dispositivos finales.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }} className="border-0">
+          <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG2} />
+            <Card.Body>
+              <Card.Title id='tc'>Opciones de pago</Card.Title>
+              <Card.Text id='txc' className="mb-4">
+                Contamos con terminal, al igual que transferencia para su comodidad.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+      </div>
+      <div className='d-flex justify-content-evenly'>
+        <Button className='w-50'>Nuestro aviso de privacidad</Button>
+      </div>
+      </Container>
+
+        </div>
       </div>
       </div>
       </>

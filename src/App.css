@@ -49,15 +49,33 @@
     #textbox{
       font-size: .8rem;
     }
+    #tc{
+      font-size: .8rem;
+    }
+    #txc{
+      font-size: .6rem;
+    }
   }
   @media screen and (min-device-width: 401px) and (max-device-width: 500px)  {
       #titlebox{
         font-size: .8rem ;
       }
+      #tc{
+        font-size: .8rem;
+      }
+      #txc{
+        font-size: .6rem;
+      }
     }
   @media screen and (min-device-width: 501px) and (max-device-width: 600px) {
       #titlebox{
         font-size: 1.2rem ;
+      }
+      #tc{
+        font-size: 1rem;
+      }
+      #txc{
+        font-size: .8rem;
       }
     }
     @media screen and (min-device-width: 601px) {
