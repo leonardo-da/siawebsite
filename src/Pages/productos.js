@@ -73,7 +73,7 @@ const App = () =>{
           </Row>
         </div>
 
-        <div className="mt-5">
+        <div data-aos="fade-left" className="mt-5">
           <h2 className="border-bottom">PC's</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {PC.map((table) => {
@@ -91,7 +91,7 @@ const App = () =>{
           </Row>
         </div>
 
-        <div className="mt-5">
+        <div data-aos="fade-right" className="mt-5">
           <h2 className="border-bottom">All in one</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {allinone.map((table) => {
@@ -109,7 +109,7 @@ const App = () =>{
           </Row>
         </div>
 
-        <div className="mt-5">
+        <div data-aos="fade-left" className="mt-5">
           <h2 className="border-bottom">Periféricos y consumibles</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {accesorios.map((table) => {
@@ -127,7 +127,7 @@ const App = () =>{
           </Row>
         </div>
 
-        <div className="mt-5">
+        <div data-aos="fade-right" className="mt-5">
           <h2 className="border-bottom">Software</h2>
           <Row className=" row-cols-1 row-cols-md-2 g-4">
             {software.map((table) => {

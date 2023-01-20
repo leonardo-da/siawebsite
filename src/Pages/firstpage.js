@@ -20,7 +20,7 @@ const App = () => {
         <h4 className="text-center m-2">Los productos y servicios de la mejor calidad para tus equipos e Impresoras.</h4>
       <div>
       <Container>
-      <div className='mt-5 d-flex justify-content-evenly text-center'>
+      <div data-aos="zoom-in-up" className='mt-5 d-flex justify-content-evenly text-center'>
         <Card style={{ width: '18rem' }} className="border-0">
           <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG0} />
             <Card.Body>
