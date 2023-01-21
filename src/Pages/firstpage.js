@@ -49,7 +49,7 @@ const App = () => {
             </Card.Body>
           </Card>
       </div>
-      <div className='d-flex justify-content-evenly'>
+      <div data-aos="zoom-in-up" className='d-flex justify-content-evenly'>
         <Button className='w-50'>Nuestro aviso de privacidad</Button>
       </div>
       </Container>
