@@ -1,8 +1,8 @@
 import '../App.css'
 import { Card,Button,Container} from "react-bootstrap";
 import fpt from "../assets/img/fpt.png";
-import IMG0 from '../assets/img/pago.png';
-import IMG1 from '../assets/img/pago.png';
+import IMG0 from '../assets/img/remoto.png';
+import IMG1 from '../assets/img/coninm.png';
 import IMG2 from '../assets/img/pago.png';
 
 const App = () => {
@@ -24,18 +24,22 @@ const App = () => {
         <Card style={{ width: '18rem' }} className="border-0">
           <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG0} />
             <Card.Body>
-              <Card.Title id='tc'>Opciones de pago</Card.Title>
-              <Card.Text id='txc' className="mb-4">
-                Soporte en remoto de ordenadores y otros dispositivos finales.
+              <Card.Title id='tc'>Asistencia remota</Card.Title>
+              <Card.Text id='txc'>
+                Ayuda sin la necesidad de acudir al negocio.
               </Card.Text>
+              <Card.Text id='txc' className="mb-4">
+                *Aplicable en algunos servicios.
+              </Card.Text>
+              
             </Card.Body>
           </Card>
           <Card style={{ width: '18rem' }} className="border-0">
           <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG1} />
             <Card.Body>
-              <Card.Title id='tc'>Opciones de pago</Card.Title>
+              <Card.Title id='tc'>Contacto inmediato</Card.Title>
               <Card.Text id='txc' className="mb-4">
-                Soporte en remoto de ordenadores y otros dispositivos finales.
+                Nos contactaremos lo más rápido nos sea posible.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -50,13 +54,14 @@ const App = () => {
           </Card>
       </div>
       <div data-aos="zoom-in-up" className='d-flex justify-content-evenly'>
-        <Button className='w-50'>Nuestro aviso de privacidad</Button>
+        <Button className='w-50 bg-secondary border-0'>Nuestro aviso de privacidad</Button>
       </div>
       </Container>
 
         </div>
       </div>
       </div>
+      
       </>
   );
 }

@@ -11,7 +11,7 @@ const App = () =>{
   ]
   const tables1 = [
     {nameI:`${IMG2}`,title:"Servidores",contenent:"Un servidor para tu empresa es más que necesario, adaptándolo a las necesidades de la empresa tanto para las tareas por realizar y la información que resguardar realizando las configuraciones adecuadas en el sistema operátivo y en la red."},
-    {nameI:`${IMG3}`,title:"Redes",contenent:"hay babosa me asustas burra"}
+    {nameI:`${IMG3}`,title:"Redes",contenent:"Configuración de Pc's y Laptops en red, instalación de impresoras y plotters para el fácil acceso de los usuarios en red. Soporte tecnico, reparación, modificación, adecuación y configuración de redes alámbricas (LAN) e inalámbricas (WLAN). Configuración e instalación de cableado estructurado, punto a punto y sistemas en red."}
   ]
     return(
       <Container>

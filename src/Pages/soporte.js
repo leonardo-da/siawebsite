@@ -15,10 +15,10 @@ const App = () =>{
         <div className="text-center mt-5">
           <h4 >¿Necesitas ayuda de forma remota?</h4>
           <div class="row row-cols-2 g-4 mt-5 d-flex justify-content-evenly">
-            <Card style={{ width: '18rem' }} className="border-primary">
+            <Card data-aos="zoom-in" style={{ width: '18rem' }} className="border-primary">
             <Card.Img className="w-50 mx-auto d-block mt-3" variant="top" src={LogoTeam} />
               <Card.Body>
-                <Card.Title>Teams Viewer</Card.Title>
+                <Card.Title>Teamviewer</Card.Title>
                 <Card.Text className="mb-4">
                   Soporte en remoto de ordenadores y otros dispositivos finales.
                 </Card.Text>
@@ -26,7 +26,7 @@ const App = () =>{
                 <Button variant="primary mx-2" href="https://download.teamviewer.com/download/TeamViewer.dmg" target="_blank">Mac</Button>
               </Card.Body>
             </Card>
-          <Card style={{ width: '18rem' }} className="border-danger">
+          <Card data-aos="zoom-in" style={{ width: '18rem' }} className="border-danger">
             <Card.Img className="w-50 mx-auto d-block mt-3" variant="top" src={LogoAny} />
               <Card.Body>
                 <Card.Title>Anydesk</Card.Title>

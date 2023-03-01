@@ -6,7 +6,7 @@ const App = () =>{
     <div style={{ marginTop:'9rem' }}>
       <div className="m-5">
         <h1 className="text-center mb-4">Contactanos</h1>
-        <div className="container ">
+        <div data-aos="zoom-in" className="container ">
           <div className="row">
             <div className="col-sm mb-4 text-center">
               <div className="my-5">
