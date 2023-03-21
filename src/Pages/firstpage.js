@@ -1,19 +1,53 @@
 import '../App.css'
 import { Card,Button,Container} from "react-bootstrap";
+import Modal from 'react-bootstrap/Modal';
+
 import fpt from "../assets/img/fpt.png";
 import IMG0 from '../assets/img/remoto.png';
 import IMG1 from '../assets/img/coninm.png';
 import IMG2 from '../assets/img/pago.png';
+import React, { useState } from 'react';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 const App = () => {
+
+  const [show, setShow] = useState(false);
+
   return (
     <>
     <div style={{ marginTop:'6.4rem' }} className="mb-4">
       <div className="position-relative mb-5">
         <img src={fpt} alt="info" className="w-100"/>
-        <div id='titlebox' className="position-absolute text-center text-white" style={{top:'20%',left:'15%'}}>We help make your life easier</div>
         <div id='textbox' className="position-absolute text-center text-white" style={{top:'35%',left:'15%', fontWeight:'bold'}}>La mejor calidad</div>
         <div id='textbox' className="position-absolute text-center text-white" style={{top:'50%',left:'15%',fontWeight:'bold'}}>en tus productos y servicios</div>
+      </div>
+      
+      <div className="mb-5">
+      <Swiper
+      slidesPerView={3}
+      spaceBetween={30}
+      freeMode={true}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[FreeMode, Pagination]}
+      className="mySwiper"
+    >
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+      <SwiperSlide><img src={fpt} alt="info"></img></SwiperSlide>
+    </Swiper>
       </div>
 
       <div>
@@ -53,8 +87,85 @@ const App = () => {
             </Card.Body>
           </Card>
       </div>
+
       <div data-aos="zoom-in-up" className='d-flex justify-content-evenly'>
-        <Button className='w-50 bg-secondary border-0'>Nuestro aviso de privacidad</Button>
+        <Button className='w-50 bg-secondary border-0' variant="primary" onClick={() => setShow(true)}>Nuestro aviso de privacidad</Button>
+
+        <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        size='xl'
+        >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Aviso de privacidad
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+          SERVICIOS INFORMATICOS DE AGUASCALIENTES, con domicilio en calle AV. INDEPENDENCIA 1926-1, colonia TROJES DE ORIENTE, ciudad AGUASCALIENTES, municipio o delegación AGUASCALIENTES, c.p. 20115, en la entidad de AGUASCALIENTES, país MEXICO, y portal de internet www.serviciosinformaticosdeags.com, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
+          ¿Para qué fines utilizaremos sus datos personales? Servicios Informáticos de Aguascalientes, (Sia) con domicilio en Av. Independencia 1926-1, Col. Trojes de Oriente, es responsable de recabar sus datos personales, del uso que se le dé a los mismos y de su protección.
+          
+          Su información personal será utilizada para proveer los servicios y productos que ha solicitado, informarle sobre cambios en los mismos y evaluar la calidad del servicio que le brindamos.
+          
+          Para las finalidades antes mencionadas, requerimos obtener los siguientes datos personales: Nombres y Apellidos, e-mail, dirección, teléfono(s), Código postal, considerado como sensible según la Ley Federal de Protección de Datos Personales.
+          
+          Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al tratamiento de los mismos o revocar el consentimiento que para tal fin nos haya otorgado, a través de los procedimientos que hemos implementado. Para conocer dichos procedimientos, los requisitos y plazos, se puede poner en contacto con nuestro departamento de datos personales en info@serviciosinformaticosdeags.com, 01 (449) 9156234 o visitar nuestra página de Internet www.serviciosinformaticosdeags.com
+          
+          Asimismo, le informamos que sus datos personales pueden ser transferidos y tratados dentro y fuera del país, por personas distintas a esta empresa. En ese sentido, su información puede ser compartida con empresas de mensajería, para realizar el manejo y envió de mercancía comprada. Si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello.
+          
+          Si usted desea dejar de recibir mensajes promocionales de nuestra parte puede solicitarlo a través de 01 (449) 9156234 o al correo info@serviciosinformaticosdeags.com Cualquier modificación a este aviso de privacidad podrá consultarla en www.serviciosinformaticosdeags.com
+          
+          Si tienes preguntas o dudas con respecto a la Política de Privacidad de Sia o nuestro sistema de procesamiento de datos, puedes contactarnos.
+          
+          Este Aviso de Privacidad contempla en todo momento los principios de licitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad en el tratamiento de los datos personales.
+          
+          Sia se compromete a que los datos personales tendrán un nivel de protección adecuado, para garantizar la seguridad, integridad y privacidad de los datos personales recopilados
+          </p>
+
+          <p>
+            
+Sus datos personales serán utilizados para las siguientes finalidades:
+
+
+• Proveer información sobre servicios y productos requeridos.
+• Informar sobre nuevos productos o servicios que estén relacionados con el contratado o adquirido.
+• Informar sobre cambios de nuestros productos o servicios.
+• Proveer soporte o apoyo operativo.
+• Brindar capacitación.
+• Comunicación de promociones y novedades.
+
+Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus datos personales de distintas formas: cuando usted nos los proporciona directamente, cuando visita nuestro sitio de Internet o utiliza nuestros servicios en línea, y cuando obtenemos información a través de otras fuentes que están permitidas por la ley.
+
+Usted puede dejar de recibir correos electrónicos con noticias de promociones, boletines informativos y novedades, solo debe responder el correo que recibió y dirigirlo a info@serviciosinformaticosdeags.com con el siguiente título “Eliminar boletín informativo”. Después de un lapso de 20 días usted ya no recibirá noticias de promociones, boletines informativos y novedades.
+
+Sia no solicita datos personales sensibles.
+
+          </p>
+
+          <p>
+          Usted tiene el derecho de acceder a sus datos personales en posesión de Sia, a los detalles del tratamiento de los mismos, rectificarlos en caso de ser inexactos, pedir su cancelación cuando considere que resulten excesivos o innecesarios para las finalidades que justificaron su obtención u oponerse al tratamiento de los mismos para fines específicos.
+
+          Asimismo, le informamos que sus datos personales pueden ser transferidos y tratados dentro y fuera del país, por personas distintas a esta empresa. En ese sentido, su información puede ser compartida con empresas de mensajería, para realizar el manejo y envió de mercancía comprada. Si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello.
+          
+          Los mecanismos que se han implementado para el ejercicio de dichos derechos son a través de la presentación de la solicitud respectiva en nuestro Departamento de Seguridad de Información ubicado en Av. Independencia 1926-1, Col. Trojes de Oriente, en Aguascalientes, Ags. Para mayor información, favor de comunicarse con el Departamento de Seguridad de Información al 01 (449) 9156234 o vía correo electrónico a info@serviciosinformaticosdeags.com
+          
+          En todo momento usted podrá revocar el consentimiento que nos ha otorgado para el tratamiento de sus datos personales, a fin de que dejemos de hacer uso de los mismos. Para ello, es necesario que presente su solicitud en las instalaciones de Sia.
+          
+          Para cualquiera de los casos anteriormente mencionados la Solicitud de Derechos deberá ir acompañada de la siguiente información:
+          
+          • Los documentos que acrediten la identidad o, en su caso, la representación legal del titular, pueden ser credencial de elector, pasaporte, entre otros (original y copia)
+          
+          • Información de contacto como lo puede ser una dirección de correo electrónico, número telefónico o dirección física para comunicarle la respuesta a su solicitud.
+          
+          • Así también el documento deberá contener la descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos antes mencionados y cualquier otro elemento o documento que facilite la localización de los datos personales.
+          
+          Tendremos un plazo máximo de 20 días para atender su petición y le informaremos sobre la procedencia de la misma al teléfono y/o dirección de correo electrónico que nos haya indicado.
+          
+          En caso de que el titular haya realizado algún pedido, estos datos no podrán ser rectificados, cancelados ni oponerse al tratamiento de los mismos ya que son necesarios para la realización de dicho pedido y todos sus efectos administrativos, legales y fiscales, correspondientes. 
+          </p>
+        </Modal.Body>
+      </Modal>
       </div>
       </Container>
 

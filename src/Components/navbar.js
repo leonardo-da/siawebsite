@@ -32,7 +32,7 @@ const App = () => {
         <div class="fixed-top">
         <Navbar key={expand} bg="dark" variant="dark" expand={expand}>
           <Container fluid className="mx-5">
-            <Navbar.Brand as={Link} to="/" className="mt-2 ms-4"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img></Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="mt-2 ms-4"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img><h2 >Servicios Informaticos de Aguascalientes</h2></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
