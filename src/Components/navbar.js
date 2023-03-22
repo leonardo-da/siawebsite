@@ -24,16 +24,17 @@ const App = () => {
         window.location.href = "https://www.youtube.com/";
       }
   }
+  
 
-  const pathname = useLocation().pathname
+  const pathname = useLocation().pathname;
   return (
     <>
       {[false].map((expand) => (
         <div class="fixed-top">
-        <Navbar key={expand} bg="dark" variant="dark" expand={expand}>
-          <Container fluid className="mx-5">
-            <Navbar.Brand as={Link} to="/" className="mt-2 ms-4"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img><h2 >Servicios Informaticos de Aguascalientes</h2></Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  />
+        <Navbar key={expand} bg="dark" variant="dark" expand={expand} id="demo">
+          <Container fluid className="mx-5" >
+            <Navbar.Brand as={Link} to="/" className="mt-2 ms-"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img><h2 >Servicios Informaticos de Aguascalientes</h2></Navbar.Brand>
+            <Navbar.Toggle   />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -45,7 +46,7 @@ const App = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link className={`${pathname === '/Servicios' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Servicios">Servicios</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Servicios' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} class="close" as={Link} to="/Servicios">Servicios</Nav.Link>
                   <Nav.Link className={`${pathname === '/Productos' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Productos">Productos</Nav.Link>
                   <Nav.Link className={`${pathname === '/Soporte' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Soporte">Soporte</Nav.Link>
                   <Nav.Link className={`${pathname === '/Contacto' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Contacto">Contacto</Nav.Link>

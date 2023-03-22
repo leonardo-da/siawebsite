@@ -68,7 +68,7 @@ const App = () =>{
           </div>
         </div>
       </div>
-          <div data-aos="zoom-in-up" dangerouslySetInnerHTML={{ __html: "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.65281325989!2d-102.32291038255615!3d21.909441299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429eee0d5369d8f%3A0x9bd66c4169507627!2sSIA%20Servicios%20Inform%C3%A1ticos%20de%20Aguascalientes!5e0!3m2!1ses-419!2smx!4v1668718884160!5m2!1ses-419!2smx' width='100%' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"}} />
+          <div data-aos="zoom-in-up" dangerouslySetInnerHTML={{ __html: "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.1578180455226!2d-102.30066168510467!3d21.92848356182995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee576cd23617%3A0xb3947a42dfabc70c!2sServicios%20Informaticos%20de%20Aguascalientes!5e0!3m2!1sen!2smx!4v1679458317534!5m2!1sen!2smx' width='100%' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"}} />
     </div>
     </>
 
