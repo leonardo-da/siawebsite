@@ -21,7 +21,7 @@ const App = () => {
   const enviarDatos = (event) => {
       event.preventDefault()
       if(datos.password === "Sia5678"){
-        window.location.href = "https://www.youtube.com/";
+        window.location.href = "https://www.serviciosinformaticosdeags.com/files/";
       }
   }
   
@@ -31,9 +31,9 @@ const App = () => {
     <>
       {[false].map((expand) => (
         <div class="fixed-top">
-        <Navbar key={expand} bg="dark" variant="dark" expand={expand} id="demo">
+        <Navbar key={expand} bg="black" variant="dark" expand={expand}>
           <Container fluid className="mx-5" >
-            <Navbar.Brand as={Link} to="/" className="mt-2 ms-"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img><h2 >Servicios Informaticos de Aguascalientes</h2></Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="mt-2 ms-"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img></Navbar.Brand>
             <Navbar.Toggle   />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -41,12 +41,12 @@ const App = () => {
               placement="end" >
               <Offcanvas.Header closeButton >
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <Navbar.Brand class="text-decoration-none text-white" as={Link} to="/"><h2>SIA</h2></Navbar.Brand>
+                  <Navbar.Brand class="text-decoration-none text-white" as={Link} to="/"><img alt="logo" src={LogoNav} style={{width:'50px',filter:'invert(100%)'}}></img></Navbar.Brand>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link className={`${pathname === '/Servicios' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} class="close" as={Link} to="/Servicios">Servicios</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Servicios' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Servicios">Servicios</Nav.Link>
                   <Nav.Link className={`${pathname === '/Productos' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Productos">Productos</Nav.Link>
                   <Nav.Link className={`${pathname === '/Soporte' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Soporte">Soporte</Nav.Link>
                   <Nav.Link className={`${pathname === '/Contacto' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Contacto">Contacto</Nav.Link>
