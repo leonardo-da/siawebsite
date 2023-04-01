@@ -24,6 +24,18 @@ const App = () => {
         window.location.href = "https://www.serviciosinformaticosdeags.com/files/";
       }
   }
+
+  const totop = (event) => {
+      window.scrollTo(0, 0);
+  }
+
+  const [menuOpen, setMenuOpen] = useState(false)
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
+
+  const handleClose = () => setMenuOpen(false)
+
   
 
   const pathname = useLocation().pathname;
@@ -33,23 +45,23 @@ const App = () => {
         <div class="fixed-top">
         <Navbar key={expand} bg="black" variant="dark" expand={expand}>
           <Container fluid className="mx-5" >
-            <Navbar.Brand as={Link} to="/" className="mt-2 ms-"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img></Navbar.Brand>
-            <Navbar.Toggle   />
-            <Navbar.Offcanvas
+            <Navbar.Brand onClick={totop} as={Link} to="/" className="mt-2 ms-"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img></Navbar.Brand>
+            <Navbar.Toggle onClick={toggleMenu}  />
+            <Navbar.Offcanvas onHide={handleClose} restoreFocus={false} show={menuOpen}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end" >
               <Offcanvas.Header closeButton >
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <Navbar.Brand class="text-decoration-none text-white" as={Link} to="/"><img alt="logo" src={LogoNav} style={{width:'50px',filter:'invert(100%)'}}></img></Navbar.Brand>
+                  <Navbar.Brand class="text-decoration-none text-white" onClick={event => {toggleMenu();totop();}} as={Link} to="/"><img alt="logo" src={LogoNav} style={{width:'50px',filter:'invert(100%)'}}></img></Navbar.Brand>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link className={`${pathname === '/Servicios' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Servicios">Servicios</Nav.Link>
-                  <Nav.Link className={`${pathname === '/Productos' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Productos">Productos</Nav.Link>
-                  <Nav.Link className={`${pathname === '/Soporte' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Soporte">Soporte</Nav.Link>
-                  <Nav.Link className={`${pathname === '/Contacto' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} as={Link} to="/Contacto">Contacto</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Servicios' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Servicios" >Servicios</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Productos' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Productos">Productos</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Soporte' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Soporte">Soporte</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Contacto' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Contacto">Contacto</Nav.Link>
                   <NavDropdown title="Ingresar" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                       <Form className="d-flex">
                         <Form.Control onChange={handleInputChange} name="password" placeholder="Contraseña" className="mx-2" type="password" />

@@ -1,4 +1,4 @@
-import { Table} from "react-bootstrap";
+import { Table, Tooltip, OverlayTrigger} from "react-bootstrap";
 
 import PC from '../assets/img/PC.png';
 import PRO from '../assets/img/procesador.png';
@@ -20,24 +20,80 @@ const App = () =>{
         <h2 className="text-center pt-5">Ensamblamos su PC de acuerdo a sus necesidades.</h2>
         <h3 className="text-center">Configurado a su estilo de trabajo</h3>
 
-        <div class="mt-5 d-flex">
-        <img className="w-50 mx-5" src={PC}></img>
-        <Table className="w-50 mx-5 text-center text-white" bordered>
+        <div class="mt-5 d-flex pb-5" style={{margin:"auto"}}>
+        <img className="w-25 me-4" alt="PC" style={{margin:"auto"}} src={PC}></img>
+        <Table className="w-25 text-center text-white" style={{margin:"auto"}} bordered>
           <tbody>
             <tr>
-              <td><div>Procesador</div><img className="w-50" src={PRO}></img></td>
-              <td><div>Memoria</div><img className="w-50" src={RAM}></img></td>
-              <td><div>Disipación</div><img className="w-50" src={FAN}></img></td>
+              <td>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Velocidad de trabajo</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Procesador</div><img className="w-50" alt="Procesador" src={PRO}></img>
+                  </span>
+                </OverlayTrigger>
+              </td>
+              <td>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Múltiples aplicaciones abiertas</Tooltip>}>
+                  <span className="d-inline-block">
+                  <div>Memoria</div><img alt="RAM" className="w-50" src={RAM}></img>
+                  </span>
+                </OverlayTrigger>
+              </td>
+              <td>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Reducir temperatura</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Disipación</div><img alt="Dicipacion" className="w-50" src={FAN}></img>
+                  </span>
+                </OverlayTrigger>
+              </td>
             </tr>
             <tr> 
-            <td><div>Gabinete</div><img className="w-50" src={GAB}></img></td>
-            <td><div>Tarjeta Grafica</div><img className="w-50" src={GRA}></img></td>
-            <td><div>Fuente de poder</div><img className="w-50" src={POD}></img></td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Estética y protección</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Gabinete</div><img alt="Gabinete" className="w-50" src={GAB}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Visualización en alta calidad</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Tarjeta Grafica</div><img alt="Grafica" className="w-50" src={GRA}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Energía para cada componente</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Fuente de poder</div><img alt="Fuente" className="w-50" src={POD}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
             </tr>
             <tr>
-            <td><div>Procesador</div><img className="w-50" src={MAD}></img></td>
-            <td><div>Almacenamiento</div><img className="w-50" src={ALM}></img></td>
-            <td><div>Perisfericos</div><img className="w-50" src={PER}></img></td>
+            <td>
+              
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Comunicación de los componentes</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Motherboard</div><img alt="Motherboard" className="w-50" src={MAD}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Velocidad en su información</Tooltip>}>
+                <span className="d-inline-block">
+                  <div>Almacenamiento</div><img alt="Almacenamiento" className="w-50" src={ALM}></img>
+                </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+            
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Controle su PC</Tooltip>}>
+                <span className="d-inline-block">
+                  <div>Perisfericos</div><img alt="Perisfericos" className="w-50" src={PER}></img>
+                </span>
+              </OverlayTrigger>
+            </td>
             </tr>
           </tbody>
         </Table>
