@@ -9,9 +9,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
-import fpt from "../assets/img/fpt.png";
 import IMG0 from '../assets/img/remoto.png';
 import IMG1 from '../assets/img/coninm.png';
 import IMG2 from '../assets/img/pago.png';
@@ -31,22 +30,23 @@ const App = () => {
 
   const [show, setShow] = useState(false);
 
+  const totop = (event) => {
+    window.scrollTo(0, 0);
+}
+
   return (
     <>
     <div style={{ marginTop:'6.4rem' }}>
-      <div className="position-relative mb-5">
-        <img src={fpt} alt="info" className="w-100"/>
-        <div id='textbox' className="position-absolute text-center text-white" style={{top:'35%',left:'15%', fontWeight:'bold'}}>La mejor calidad</div>
-        <div id='textbox' className="position-absolute text-center text-white" style={{top:'50%',left:'15%',fontWeight:'bold'}}>en tus productos y servicios</div>
-      </div>
-      
-      <div className="my-5">
+      <div className="my-5 pt-4">
         <h1 className='ms-5 mb-5'>Todo en relación para tus equipos de cómputo.</h1>
         <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
           slidesPerView={5}
           spaceBetween={30}
-          navigation={true}
-          modules={[Navigation, Pagination]}
+          modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
           <SwiperSlide><img src={IMG3} alt="info"></img>PC's</SwiperSlide>
@@ -61,52 +61,80 @@ const App = () => {
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button className='w-25 bg-secondary border-0 ' as={Link} to="/productos" variant="primary">Ver todo</Button>    
+          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/productos" variant="primary">Ver todo</Button>    
+        </div>
+      </div>
+
+      <div className="py-5" style={{background:'#636363'}}>
+        <h1 className='ms-5 mb-5 text-white'>Servicios para sus productos y/o su empresa</h1>
+        <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+          slidesPerView={4}
+          spaceBetween={30}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper text-white"
+        >
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG3} alt="info"></img>PC's</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG4} alt="info"></img>Portatiles</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG5} alt="info"></img>All in one</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG6} alt="info"></img>Almacenamiento</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG7} alt="info"></img>Periféricos</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG8} alt="info"></img>Componentes</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG9} alt="info"></img>Software</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG10} alt="info"></img>Toners</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG11} alt="info"></img>Tintas</SwiperSlide>
+        </Swiper>
+
+        <div className='d-flex justify-content-evenly mt-5'>
+          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/servicios" variant="primary">Ver todo</Button>    
         </div>
       </div>
       
       
-      <div style={{background:'#636363'}}>
+      <div>
       <h4 className="mb-5">´</h4>
         <div>
-          <h3 className="text-center m-2 text-white" >Los productos y servicios de la mejor calidad para tus equipos e Impresoras.</h3>
+          <h3 className="text-center m-2 " >Los productos y servicios de la mejor calidad para tus equipos e Impresoras.</h3>
         <div>
         <Container>
         <div data-aos="zoom-in-up" className='mt-5 d-flex justify-content-evenly text-center'>
-          <Card style={{ width: '18rem',background:'#636363'}} className="border-0" >
+          <Card style={{ width: '18rem'}} className="border-0" >
             <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG0} />
               <Card.Body>
-                <Card.Title id='tc' className='text-white'>Asistencia remota</Card.Title>
-                <Card.Text id='txc' className='text-white'>
+                <Card.Title id='tc' >Asistencia remota</Card.Title>
+                <Card.Text id='txc' >
                   Ayuda sin la necesidad de acudir al negocio.
                 </Card.Text>
-                <Card.Text id='txc' className="mb-4 text-white" >
+                <Card.Text id='txc' className="mb-4 " >
                   *Aplicable en algunos servicios.
                 </Card.Text>
                 
               </Card.Body>
             </Card>
-            <Card style={{ width: '18rem',background:'#636363'}} className="border-0">
+            <Card style={{ width: '18rem'}} className="border-0">
             <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG1} />
               <Card.Body>
-                <Card.Title id='tc' className='text-white'>Contacto inmediato</Card.Title>
-                <Card.Text id='txc' className="mb-4 text-white">
+                <Card.Title id='tc' >Contacto inmediato</Card.Title>
+                <Card.Text id='txc' className="mb-4 ">
                   Nos contactaremos lo más rápido nos sea posible.
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: '18rem',background:'#636363'}} className="border-0">
+            <Card style={{ width: '18rem'}} className="border-0">
             <Card.Img className="w-50 mx-auto mt-3" variant="top" src={IMG2} />
               <Card.Body>
-                <Card.Title id='tc' className="text-white">Opciones de pago</Card.Title>
-                <Card.Text id='txc' className="mb-4 text-white">
+                <Card.Title id='tc'>Opciones de pago</Card.Title>
+                <Card.Text id='txc' className="mb-4 ">
                   Contamos con terminal, al igual que transferencia para su comodidad.
                 </Card.Text>
               </Card.Body>
             </Card>
         </div>
         <div data-aos="zoom-in-up" className='d-flex justify-content-evenly'>
-          <Button className='w-25 text-white border-0  mb-5' style={{background:'#B7B7B7'}} onClick={() => setShow(true)}>Nuestro aviso de privacidad</Button>
+          <Button className='w-25 text-white border-0  mb-5 bg-secondary' onClick={() => setShow(true)}>Nuestro aviso de privacidad</Button>
 
           <Modal
           show={show}

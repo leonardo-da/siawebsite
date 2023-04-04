@@ -5,6 +5,7 @@ import Servicios from "./Pages/servicios";
 import Productos from "./Pages/productos";
 import Soporte from "./Pages/soporte";
 import Contacto from "./Pages/contacto";
+import Aviso from "./Pages/aviso";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path='productos' element={<Productos/>}/>
             <Route path='soporte' element={<Soporte/>}/>
             <Route path='contacto' element={<Contacto/>}/>
+            <Route path='avisodeprivacidad' element={<Aviso/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
