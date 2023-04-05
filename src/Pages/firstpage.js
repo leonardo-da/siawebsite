@@ -66,7 +66,7 @@ const App = () => {
       </div>
 
       <div className="py-5" style={{background:'#636363'}}>
-        <h1 className='ms-5 mb-5 text-white'>Servicios para sus productos y/o su empresa</h1>
+        <h1 className='ms-5 mb-5 text-white'>Servicios para tus equipos y/o tu empresa</h1>
         <Swiper
         autoplay={{
           delay: 2500,
