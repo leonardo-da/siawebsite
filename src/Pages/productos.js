@@ -166,7 +166,7 @@ const App = () =>{
 
           <Tab eventKey="Laptop" title="Laptop">
             <img className="w-25" alt="Laptop" src={LV}></img>
-            <p id="tab" className="px-4">Si lo que buscas es llevar a todas partes tu trabajo, una laptop es tu mejor opción tanto si lo requiere para videojuegos, para sus trabajos y estudios, incluso para diseño gráfico.</p>
+            <p id="tab" className="px-4">Si lo que buscas es llevar a todas partes tu trabajo, una laptop es tu mejor opción tanto si lo requieres para videojuegos, para tus trabajos y estudios, incluso para diseño gráfico.</p>
           </Tab>
 
           <Tab eventKey="Allinone" title="Todo en uno">
@@ -176,12 +176,12 @@ const App = () =>{
 
           <Tab eventKey="MiniPC" title="Mini PC">
             <img className="w-25" alt="Minipc" src={MP}></img>
-            <p id="tab" className="px-4">Si lo que busca es llevar a todas partes su trabajo, una laptop es su mejor opción tanto si lo requiere para videojuegos, para sus trabajos y estudios, incluso para diseño gráfico.</p>
+            <p id="tab" className="px-4">Necesitas un equipo potente que te permita realizar tareas como navegar, crear documentos o incluso editar videos o jugar sin ocupar demasiado espacio, el mini PC es la mejor opción.</p>
           </Tab>
 
           <Tab eventKey="Macbook" title="Macbook">
             <img className="w-25" alt="Macbook" src={MB}></img>
-            <p id="tab" className="px-4">Si lo que busca es llevar a todas partes tu trabajo, una laptop es tu mejor opción tanto si lo requiere para videojuegos, para sus trabajos y estudios, incluso para diseño gráfico.</p>
+            <p id="tab" className="px-4">La mayor seguridad en tu información y los mejores componentes al adquirir un equipo MacBook.<br/> MacBook Air, MacBook Pro, Mac mini, iMac.</p>
           </Tab>
         </Tabs>
       </div>

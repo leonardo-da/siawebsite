@@ -69,7 +69,7 @@ const App = () => {
         <h1 className='ms-5 mb-5 text-white'>Servicios para tus equipos y/o tu empresa</h1>
         <Swiper
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
           slidesPerView={4}
