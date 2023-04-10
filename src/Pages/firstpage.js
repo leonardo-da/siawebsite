@@ -18,10 +18,10 @@ import IMG2 from '../assets/img/pago.png';
 import IMG3 from '../assets/img/pcgamer.png';
 import IMG4 from '../assets/img/videojuegos.png';
 import IMG5 from '../assets/img/allalto.png';
-import IMG6 from '../assets/img/almacenamiento.png';
+import IMG6 from '../assets/img/camaras.png';
 import IMG7 from '../assets/img/mouseytec.png';
 import IMG8 from '../assets/img/componentes.png';
-import IMG9 from '../assets/img/office.png';
+import IMG9 from '../assets/img/redes.png';
 import IMG10 from '../assets/img/toner.png';
 import IMG11 from '../assets/img/tinta.png';
 
@@ -52,10 +52,10 @@ const App = () => {
           <SwiperSlide><img src={IMG3} alt="info"></img>PC's</SwiperSlide>
           <SwiperSlide><img src={IMG4} alt="info"></img>Portatiles</SwiperSlide>
           <SwiperSlide><img src={IMG5} alt="info"></img>All in one</SwiperSlide>
-          <SwiperSlide><img src={IMG6} alt="info"></img>Almacenamiento</SwiperSlide>
+          <SwiperSlide><img src={IMG6} alt="info"></img>Camaras</SwiperSlide>
           <SwiperSlide><img src={IMG7} alt="info"></img>Periféricos</SwiperSlide>
           <SwiperSlide><img src={IMG8} alt="info"></img>Componentes</SwiperSlide>
-          <SwiperSlide><img src={IMG9} alt="info"></img>Software</SwiperSlide>
+          <SwiperSlide><img src={IMG9} alt="info"></img>Redes</SwiperSlide>
           <SwiperSlide><img src={IMG10} alt="info"></img>Toners</SwiperSlide>
           <SwiperSlide><img src={IMG11} alt="info"></img>Tintas</SwiperSlide>
         </Swiper>
@@ -80,10 +80,10 @@ const App = () => {
           <SwiperSlide style={{background:'#636363'}}><img src={IMG3} alt="info"></img>PC's</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img src={IMG4} alt="info"></img>Portatiles</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img src={IMG5} alt="info"></img>All in one</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG6} alt="info"></img>Almacenamiento</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG6} alt="info"></img>Camaras</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img src={IMG7} alt="info"></img>Periféricos</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img src={IMG8} alt="info"></img>Componentes</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG9} alt="info"></img>Software</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img src={IMG9} alt="info"></img>Redes</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img src={IMG10} alt="info"></img>Toners</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img src={IMG11} alt="info"></img>Tintas</SwiperSlide>
         </Swiper>

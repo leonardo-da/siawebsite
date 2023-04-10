@@ -36,9 +36,12 @@ import PER from '../assets/img/perisfericos.png';
 import TON from '../assets/img/toner.png';
 import TIN from '../assets/img/tinta.png';
 
-
 import COM from '../assets/img/componentes.png';
 import MYT from '../assets/img/mouseytec.png';
+
+import CAM from '../assets/img/camaras.png';
+import RED from '../assets/img/redes.png';
+
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -239,7 +242,7 @@ const App = () =>{
       <div>
         <h2 className="text-center pt-5">Consumibles para tus impresoras.</h2>
 
-        <div class="mt-3 d-flex justify-content-evenly pb-5">
+        <div class="mt-3 d-flex justify-content-evenly mb-5">
           <Card  style={{ width: '25rem' }}>
             <Card.Img className="w-75 mx-auto" src={TON} />
             <Card.Body>
@@ -265,7 +268,140 @@ const App = () =>{
             </ListGroup>
         </Card>
         </div>
-        
+
+      <div style={{background:'#636363'}} className="text-white">
+        <div class="py-5 d-flex justify-content-evenly">
+          <Card  style={{ width: '25rem',background:'#636363' }} className="border-0">
+            
+            <Card.Body>
+              <Card.Title>Cámaras de videovigilancia</Card.Title>
+              <Card.Text className="mt-4">
+              <p>Instala tu sistema de vigilancia en el lugar que necesites, las mejores marcas y los diferentes componentes necesarios para tener tu instalación completa.<br/><br/>
+              <ul>
+                <li>DVR´s.</li>
+                <li>Cámaras WIFI.</li>
+                <li>Cámaras IP.</li>
+                <li>Discos duros especiales.</li>
+                <li>Cableado.</li>
+              </ul>
+              </p>
+              </Card.Text>
+            </Card.Body>
+            <Card.Img className="w-75 mx-auto" src={CAM} />
+        </Card>
+        <Card style={{ width: '25rem',background:'#636363' }} className="border-0">
+            <Card.Body>
+              <Card.Title>Redes alámbricas e inalámbricas</Card.Title>
+              <Card.Text className="mt-4">
+                <p>Todo lo necesario para tu red, los mejores componentes para lograr que su sistema sea rápido, eficiente y que esté disponible en todo momento. <br/><br/>
+              <ul>
+                <li>Access point.</li>
+                <li>Switch.</li>
+                <li>Adaptadores de red.</li>
+                <li>Routers.</li>
+                <li>Hubs.</li>
+              </ul>
+              </p>
+              </Card.Text>
+            </Card.Body>
+            <Card.Img className="w-75 mx-auto" src={RED} />
+        </Card>
+        </div>
+
+        <div className="text-white">
+        <h2 className="text-center">Servidores</h2>
+
+        <div class="mt-5 d-flex pb-5" style={{margin:"auto"}}>
+        <Swiper   style={{margin:"auto"}}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper w-25 me-4"
+      >
+        <SwiperSlide style={{background:'#636363'}}><img src={PC} alt="Gamer"></img>Videojuegos</SwiperSlide>
+        <SwiperSlide style={{background:'#636363'}}><img src={PCD} alt="Diseño"></img>Diseño</SwiperSlide>
+        <SwiperSlide style={{background:'#636363'}}><img src={PCN} alt="Negocio"></img>Negocio</SwiperSlide>
+      </Swiper>
+        <Table className="w-25 text-center text-white table table-borderless" style={{margin:"auto"}}>
+          <tbody>
+            <tr>
+              <td>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Velocidad de trabajo</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Procesador</div><img className="w-50" alt="Procesador" src={PRO}></img>
+                  </span>
+                </OverlayTrigger>
+              </td>
+              <td>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Múltiples aplicaciones abiertas</Tooltip>}>
+                  <span className="d-inline-block">
+                  <div>Memoria</div><img alt="RAM" className="w-50" src={RAM}></img>
+                  </span>
+                </OverlayTrigger>
+              </td>
+              <td>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Reducir temperatura</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Disipación</div><img alt="Dicipacion" className="w-50" src={FAN}></img>
+                  </span>
+                </OverlayTrigger>
+              </td>
+            </tr>
+            <tr> 
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Estética y protección</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Gabinete</div><img alt="Gabinete" className="w-50" src={GAB}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Visualización en alta calidad</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Tarjeta Grafica</div><img alt="Grafica" className="w-50" src={GRA}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Energía para cada componente</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Fuente de poder</div><img alt="Fuente" className="w-50" src={POD}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            </tr>
+            <tr>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Comunicación de los componentes</Tooltip>}>
+                  <span className="d-inline-block">
+                    <div>Motherboard</div><img alt="Motherboard" className="w-50" src={MAD}></img>
+                  </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Velocidad en su información</Tooltip>}>
+                <span className="d-inline-block">
+                  <div>Almacenamiento</div><img alt="Almacenamiento" className="w-50" src={ALM}></img>
+                </span>
+              </OverlayTrigger>
+            </td>
+            <td>
+              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Controle su PC</Tooltip>}>
+                <span className="d-inline-block">
+                  <div>Perisfericos</div><img alt="Perisfericos" className="w-50" src={PER}></img>
+                </span>
+              </OverlayTrigger>
+            </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
+      </div>
+      </div>
       </div>
       </>
  
