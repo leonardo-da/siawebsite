@@ -128,3 +128,13 @@
     left: -240px;
     transition:0.3s all ease-in-out;
 }
+#s .nav-link.active{
+  background-color: #636363;
+}
+#s .nav-link {
+  border-bottom: transparent;
+  color: #fff;
+}
+#r .nav-link {
+  color: #000000;
+}

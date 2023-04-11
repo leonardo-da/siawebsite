@@ -26,6 +26,12 @@ import IMG10 from '../assets/img/toner.png';
 import IMG11 from '../assets/img/tinta.png';
 
 
+import IMG12 from '../assets/img/camaras1.png';
+import IMG13 from '../assets/img/redes1.png';
+import IMG14 from '../assets/img/mttotinta.jpg';
+import IMG15 from '../assets/img/mttocorr.png';
+
+
 const App = () => {
 
   const [show, setShow] = useState(false);
@@ -55,7 +61,7 @@ const App = () => {
           <SwiperSlide><img src={IMG6} alt="info"></img>Camaras</SwiperSlide>
           <SwiperSlide><img src={IMG7} alt="info"></img>Periféricos</SwiperSlide>
           <SwiperSlide><img src={IMG8} alt="info"></img>Componentes</SwiperSlide>
-          <SwiperSlide><img src={IMG9} alt="info"></img>Redes</SwiperSlide>
+          <SwiperSlide><img src={IMG9} alt="info"></img>Componentes de red</SwiperSlide>
           <SwiperSlide><img src={IMG10} alt="info"></img>Toners</SwiperSlide>
           <SwiperSlide><img src={IMG11} alt="info"></img>Tintas</SwiperSlide>
         </Swiper>
@@ -77,15 +83,10 @@ const App = () => {
           modules={[Autoplay, Pagination]}
           className="mySwiper text-white"
         >
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG3} alt="info"></img>PC's</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG4} alt="info"></img>Portatiles</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG5} alt="info"></img>All in one</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG6} alt="info"></img>Camaras</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG7} alt="info"></img>Periféricos</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG8} alt="info"></img>Componentes</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG9} alt="info"></img>Redes</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG10} alt="info"></img>Toners</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img src={IMG11} alt="info"></img>Tintas</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img className='mt-5' src={IMG12} alt="info"></img>Camaras</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img className='mt-5' src={IMG13} alt="info"></img>Redes</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img className='mt-4' src={IMG14} alt="info"></img>Mantenimiento impresoras</SwiperSlide>
+          <SwiperSlide style={{background:'#636363'}}><img className='mt-4' src={IMG15} alt="info"></img>Mantenimiento a equipos</SwiperSlide>
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
