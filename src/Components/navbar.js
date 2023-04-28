@@ -26,8 +26,8 @@ const App = () => {
   }
 
   const totop = (event) => {
-      window.scrollTo(0, 0);
-  }
+    window.scrollTo(0, -1);
+}
 
   const [menuOpen, setMenuOpen] = useState(false)
   const toggleMenu = () => {

@@ -6,6 +6,9 @@ import Col from 'react-bootstrap/Col';
 import { Button } from "react-bootstrap";
 
 const App = () => {
+  const totop = (event) => {
+    window.scrollTo(0, -1);
+}
   return (
     <>
     <div className="bg-dark">
@@ -43,7 +46,7 @@ const App = () => {
                   449-366-6300
                 </div>
                 
-            <Button className="mt-3" variant="primary" as={Link} to="/Contacto">Contactanos</Button>
+            <Button className="mt-3" variant="primary" onClick={totop} as={Link} to="/Contacto">Contactanos</Button>
           </Col>
             <Col sm className="p-4">
               

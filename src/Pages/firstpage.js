@@ -2,6 +2,7 @@ import '../App.css'
 import { Card,Button,Container} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
+import { Helmet } from 'react-helmet';
 
 import React, { useState } from 'react';
 
@@ -37,11 +38,13 @@ const App = () => {
   const [show, setShow] = useState(false);
 
   const totop = (event) => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, -1);
 }
-
   return (
     <>
+    <Helmet>
+      <script src="//code.tidio.co/ncpjjeinsh8tetuhimjsgvbv4xirun7t.js" async></script>
+    </Helmet>
     <div style={{ marginTop:'6.4rem' }}>
       <div className="my-5 pt-4">
         <h1 className='ms-5 mb-5'>Todo en relación para tus equipos de cómputo.</h1>
@@ -53,7 +56,7 @@ const App = () => {
           slidesPerView={5}
           spaceBetween={30}
           modules={[Autoplay, Pagination]}
-          className="mySwiper"
+          className="mySwiper px-3"
         >
           <SwiperSlide><img src={IMG3} alt="info"></img>PC's</SwiperSlide>
           <SwiperSlide><img src={IMG4} alt="info"></img>Portatiles</SwiperSlide>
@@ -67,7 +70,7 @@ const App = () => {
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/productos" variant="primary">Ver todo</Button>    
+          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/Productos" variant="primary">Ver todo</Button>    
         </div>
       </div>
 
@@ -81,7 +84,7 @@ const App = () => {
           slidesPerView={4}
           spaceBetween={30}
           modules={[Autoplay, Pagination]}
-          className="mySwiper text-white"
+          className="mySwiper text-white px-3"
         >
           <SwiperSlide style={{background:'#636363'}}><img className='mt-5' src={IMG12} alt="info"></img>Camaras</SwiperSlide>
           <SwiperSlide style={{background:'#636363'}}><img className='mt-5' src={IMG13} alt="info"></img>Redes</SwiperSlide>
@@ -90,7 +93,7 @@ const App = () => {
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/servicios" variant="primary">Ver todo</Button>    
+          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/Servicios" variant="primary">Ver todo</Button>    
         </div>
       </div>
       
