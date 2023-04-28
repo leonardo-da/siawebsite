@@ -129,7 +129,7 @@
     transition:0.3s all ease-in-out;
 }
 #s .nav-link.active{
-  background-color: #636363;
+  background-color: #45484a;
 }
 #s .nav-link {
   border-bottom: transparent;

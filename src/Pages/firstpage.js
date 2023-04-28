@@ -2,7 +2,6 @@ import '../App.css'
 import { Card,Button,Container} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
-import { Helmet } from 'react-helmet';
 
 import React, { useState } from 'react';
 
@@ -38,13 +37,11 @@ const App = () => {
   const [show, setShow] = useState(false);
 
   const totop = (event) => {
-    window.scrollTo(0, -1);
+    window.scrollTo(0, 0);
 }
+
   return (
     <>
-    <Helmet>
-      <script src="//code.tidio.co/ncpjjeinsh8tetuhimjsgvbv4xirun7t.js" async></script>
-    </Helmet>
     <div style={{ marginTop:'6.4rem' }}>
       <div className="my-5 pt-4">
         <h1 className='ms-5 mb-5'>Todo en relación para tus equipos de cómputo.</h1>
@@ -70,11 +67,11 @@ const App = () => {
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/Productos" variant="primary">Ver todo</Button>    
+          <Button style={{background: '#474b4e'}} className='w-25 border-0 ' onClick={totop} as={Link} to="/productos" variant="primary">Ver todo</Button>    
         </div>
       </div>
 
-      <div className="py-5" style={{background:'#636363'}}>
+      <div className="py-5" style={{background:'#45484a'}}>
         <h1 className='ms-5 mb-5 text-white'>Servicios para tus equipos y/o tu empresa</h1>
         <Swiper
         autoplay={{
@@ -86,14 +83,14 @@ const App = () => {
           modules={[Autoplay, Pagination]}
           className="mySwiper text-white px-3"
         >
-          <SwiperSlide style={{background:'#636363'}}><img className='mt-5' src={IMG12} alt="info"></img>Camaras</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img className='mt-5' src={IMG13} alt="info"></img>Redes</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img className='mt-4' src={IMG14} alt="info"></img>Mantenimiento impresoras</SwiperSlide>
-          <SwiperSlide style={{background:'#636363'}}><img className='mt-4' src={IMG15} alt="info"></img>Mantenimiento a equipos</SwiperSlide>
+          <SwiperSlide style={{background:'#45484a'}}><img className='mt-5' src={IMG12} alt="info"></img>Camaras</SwiperSlide>
+          <SwiperSlide style={{background:'#45484a'}}><img className='mt-5' src={IMG13} alt="info"></img>Redes</SwiperSlide>
+          <SwiperSlide style={{background:'#45484a'}}><img className='mt-4' src={IMG14} alt="info"></img>Mantenimiento impresoras</SwiperSlide>
+          <SwiperSlide style={{background:'#45484a'}}><img className='mt-4' src={IMG15} alt="info"></img>Mantenimiento a equipos</SwiperSlide>
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button className='w-25 bg-secondary border-0 ' onClick={totop} as={Link} to="/Servicios" variant="primary">Ver todo</Button>    
+          <Button style={{background: '#535b61'}} className='w-25 border-0 ' onClick={totop} as={Link} to="/servicios" variant="primary">Ver todo</Button>    
         </div>
       </div>
       
@@ -138,13 +135,8 @@ const App = () => {
             </Card>
         </div>
         <div data-aos="zoom-in-up" className='d-flex justify-content-evenly'>
-          <Button className='w-25 text-white border-0  mb-5 bg-secondary' onClick={() => setShow(true)}>Nuestro aviso de privacidad</Button>
-
-          <Modal
-          show={show}
-          onHide={() => setShow(false)}
-          size='xl'
-          >
+          <Button style={{background: '#474b4e'}} className='w-25 text-white border-0 mb-5' onClick={() => setShow(true)}>Nuestro aviso de privacidad</Button>
+          <Modal show={show} onHide={() => setShow(false)} size='xl'>
           <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
               Aviso de privacidad

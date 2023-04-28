@@ -26,8 +26,8 @@ const App = () => {
   }
 
   const totop = (event) => {
-    window.scrollTo(0, -1);
-}
+      window.scrollTo(0, 0);
+  }
 
   const [menuOpen, setMenuOpen] = useState(false)
   const toggleMenu = () => {
@@ -41,9 +41,10 @@ const App = () => {
   const pathname = useLocation().pathname;
   return (
     <>
+    
       {[false].map((expand) => (
         <div class="fixed-top">
-        <Navbar key={expand} bg="black" variant="dark" expand={expand}>
+        <Navbar key={expand} variant="dark" expand={expand} style={{background:'#1a1a1a'}}>
           <Container fluid className="mx-5" >
             <Navbar.Brand onClick={totop} as={Link} to="/" className="mt-2 ms-"><img alt="logo" src={LogoNav} style={{width:'50px'}}></img></Navbar.Brand>
             <Navbar.Toggle onClick={toggleMenu}  />

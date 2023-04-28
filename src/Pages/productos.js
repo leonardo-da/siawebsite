@@ -41,8 +41,7 @@ import MYT from '../assets/img/mouseytec.png';
 
 import CAM from '../assets/img/camaras1.png';
 import RED from '../assets/img/redes1.png';
-import SER from '../assets/img/Servidor.png';
-
+import SER from '../assets/img/servidor.png';
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -60,7 +59,7 @@ const App = () =>{
 
     return(
       <>
-      <div style={{background:'#636363',marginTop:'6rem'}} className="text-white">
+      <div style={{background:'#45484a' ,marginTop:'6rem',color:'#f5f5f5'}}>
         <h2 className="text-center pt-5">Ensamblamos tu PC de acuerdo a tus necesidades.</h2>
         <h3 className="text-center">Configurado a tu estilo de trabajo</h3>
 
@@ -75,9 +74,9 @@ const App = () =>{
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper w-25 me-4"
       >
-        <SwiperSlide style={{background:'#636363'}}><img src={PC} alt="Gamer"></img>Videojuegos</SwiperSlide>
-        <SwiperSlide style={{background:'#636363'}}><img src={PCD} alt="Diseño"></img>Diseño</SwiperSlide>
-        <SwiperSlide style={{background:'#636363'}}><img src={PCN} alt="Negocio"></img>Negocio</SwiperSlide>
+        <SwiperSlide style={{background:'#45484a'}}><img src={PC} alt="Gamer"></img>Videojuegos</SwiperSlide>
+        <SwiperSlide style={{background:'#45484a'}}><img src={PCD} alt="Diseño"></img>Diseño</SwiperSlide>
+        <SwiperSlide style={{background:'#45484a'}}><img src={PCN} alt="Negocio"></img>Negocio</SwiperSlide>
       </Swiper>
         <Table className="w-25 text-center text-white table table-borderless" style={{margin:"auto"}}>
           <tbody>
@@ -201,10 +200,10 @@ const App = () =>{
       </div>
 
 
-      <div style={{background:'#636363'}} className="text-white">
+      <div style={{background:'#45484a',color:'#f5f5f5'}} >
         <h2 className="text-center pt-5 mb-4">Componentes y periféricos para tus equipos.</h2>
         <div class="mt-3 d-flex justify-content-evenly p-5">
-          <Card  style={{ width: '25rem',background:'#636363' }} className="border-white">
+          <Card  style={{ width: '25rem',background:'#45484a' }} className="border-white">
             <Card.Img className="w-75 mx-auto" src={COM} />
             <Card.Body>
               <Card.Title>Componentes</Card.Title>
@@ -213,14 +212,14 @@ const App = () =>{
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">SSD</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Tarjetas gráficas</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Fuente de alimentación</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Memoria RAM</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Y más</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Tarjetas gráficas</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">SSD</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Fuente de alimentación</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Memoria RAM</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Y más</ListGroup.Item>
             </ListGroup>
         </Card>
-        <Card  style={{ width: '25rem',background:'#636363' }} className="border-white">
+        <Card  style={{ width: '25rem',background:'#45484a' }} className="border-white">
             <Card.Img className="w-75 mx-auto" src={MYT} />
             <Card.Body>
               <Card.Title>Periféricos</Card.Title>
@@ -229,11 +228,11 @@ const App = () =>{
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Mouse y teclados</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Adaptadores</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Almacenamiento</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Camaras</ListGroup.Item>
-              <ListGroup.Item style={{background:'#636363'}} className="text-white">Y más</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Mouse y teclados</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Adaptadores</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Almacenamiento</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Camaras</ListGroup.Item>
+              <ListGroup.Item style={{background:'#45484a'}} className="text-white">Y más</ListGroup.Item>
             </ListGroup>
         </Card>
         </div>
@@ -270,7 +269,7 @@ const App = () =>{
         </Card>
         </div>
 
-      <div style={{background:'#636363'}} className="text-white">
+      <div style={{background:'#45484a',color:'#f5f5f5'}}>
       <div className="text-white">
         <h1 className="text-center pt-5">Servidores</h1>
         <div class="mt-5 d-flex pb-5" style={{margin:"auto"}}>
@@ -292,7 +291,7 @@ const App = () =>{
           </div>
 
         <div class="py-3 d-flex justify-content-evenly">
-          <Card  style={{ width: '25rem',background:'#636363' }} className="border-0">
+          <Card  style={{ width: '25rem',background:'#45484a' }} className="border-0">
             <Card.Body>
               <h2>Cámaras de videovigilancia</h2>
               <Card.Text className="mt-4">
@@ -309,7 +308,7 @@ const App = () =>{
             </Card.Body>
             <Card.Img className="w-75 mx-auto" src={CAM} />
         </Card>
-        <Card style={{ width: '25rem',background:'#636363' }} className="border-0">
+        <Card style={{ width: '25rem',background:'#45484a' }} className="border-0">
             <Card.Body>
               <h2>Redes alámbricas e inalámbricas</h2>
               <Card.Text className="mt-4">
