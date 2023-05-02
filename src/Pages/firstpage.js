@@ -42,6 +42,7 @@ const App = () => {
 
   return (
     <>
+    
     <div style={{ marginTop:'6.4rem' }}>
       <div className="my-5 pt-4">
         <h1 className='ms-5 mb-5'>Todo en relación para tus equipos de cómputo.</h1>
@@ -67,7 +68,7 @@ const App = () => {
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button style={{background: '#474b4e'}} className='w-25 border-0 ' onClick={totop} as={Link} to="/productos" variant="primary">Ver todo</Button>    
+          <Button style={{background: '#474b4e'}} className='w-25 border-0 ' onClick={totop} as={Link} to="/Productos" variant="primary">Ver todo</Button>    
         </div>
       </div>
 
@@ -90,7 +91,7 @@ const App = () => {
         </Swiper>
 
         <div className='d-flex justify-content-evenly mt-5'>
-          <Button style={{background: '#535b61'}} className='w-25 border-0 ' onClick={totop} as={Link} to="/servicios" variant="primary">Ver todo</Button>    
+          <Button style={{background: '#535b61'}} className='w-25 border-0 ' onClick={totop} as={Link} to="/Servicios" variant="primary">Ver todo</Button>    
         </div>
       </div>
       

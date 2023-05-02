@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Footer from "../Pages/footer";
 import React, { useState } from 'react';
 import LogoNav from '../assets/img/navbarLogo.png';
+import Helmet from 'react-helmet';
 
 const App = () => {
 
@@ -41,7 +42,10 @@ const App = () => {
   const pathname = useLocation().pathname;
   return (
     <>
-    
+    <Helmet>
+      <script src="//code.tidio.co/ncpjjeinsh8tetuhimjsgvbv4xirun7t.js" async></script>
+    </Helmet>
+
       {[false].map((expand) => (
         <div class="fixed-top">
         <Navbar key={expand} variant="dark" expand={expand} style={{background:'#1a1a1a'}}>

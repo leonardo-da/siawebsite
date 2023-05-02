@@ -7,7 +7,7 @@ import PRE from '../assets/img/mttoprev.png';
 import MTL from '../assets/img/mttolaser.jpg';
 import MTT from '../assets/img/mttotinta.jpg';
 
-import SER from '../assets/img/servidor.png';
+import SER from '../assets/img/Servidor.png';
 import CAM from '../assets/img/camaras.png';
 import RAC from '../assets/img/rack.jpg';
 
@@ -85,17 +85,49 @@ const App = () =>{
     <Tabs defaultActiveKey="Servidores" className="my-5" fill >
       <Tab eventKey="Servidores" title="Servidores">
         <img className="w-25 my-4" alt="Servidor" src={SER}></img>
-        <p id="tab" className="px-4">Si lo que buscas es llevar a todas partes tu trabajo, una laptop es tu mejor opción tanto si lo requieres para videojuegos, para tus trabajos y estudios, incluso para diseño gráfico.</p>
+        <p id="tab" className="px-4">Instalación y configuración de servidores de las mejores marcas, adaptado a sus necesidades.<br/>
+
+        Los mejores componentes para su servidor: RAM, procesador, almacenamiento, seguridad. <br/><br/>
+        
+        Diferentes tipos de configuraciones para su servidor: <br/><br/>
+        <ul>
+        <li>Sistema operativo.</li>
+        <li>Permisos y alta de usuarios.</li>
+        <li>Conexión remota a servidor.</li>
+        <li>Comunicación con diferentes equipos y usuarios.</li>
+        </ul><br/><br/>
+        
+        Servidor configurado y optimizado para distintos ámbitos de la empresa:<br/><br/>
+        <ul>
+          <li>Servidor de datos.</li>
+          <li>Servidor para aplicaciones.</li>
+          <li>Servidor de bases de datos.</li>
+        </ul>
+        </p>
       </Tab>
 
       <Tab eventKey="Camaras" title="Camaras">
         <img className="w-25" alt="Camaras" src={CAM}></img>
-        <p id="tab" className="px-4">Un PC puede ocupar mucho espacio en su escritorio, por lo que si busca aprovechar el espacio un equipo Todo en uno puede ser su mejor opción, teniendo todo en pantalla y sin la necesidad de realizar conexiones.</p>
+        <p id="tab" className="px-4">Si lo que buscas es seguridad, las cámaras de videovigilancia son una opción certera, contamos con todas las soluciones de seguridad en videovigilancia para tus necesidades: ya sea que necesites la instalación completa en tu empresa, negocio u hogar, mantenimiento a cámaras e instalación, errores en su sistema, etc.</p>
       </Tab>
 
       <Tab eventKey="Redes" title="Redes">
         <img className="w-25" alt="Rack" src={RAC}></img>
-        <p id="tab" className="px-4">Necesitas un equipo potente que te permita realizar tareas como navegar, crear documentos o incluso editar videos o jugar sin ocupar demasiado espacio, el mini PC es la mejor opción.</p>
+        <p id="tab" className="px-4 mt-5">Instalación de su red informática voz y datos, conexión de usuarios, dispositivos y clientes dentro de la red.<br/><br/>
+
+        Routers, switches, servidores, access point de las mejores marcas para su empresa o negocio, adaptado a sus necesidades.<br/><br/>
+        
+        Conexión a red de todos sus equipos alámbrico o inalámbrico, impresoras, PC's, laptops, etc.<br/><br/>
+        
+        Soporte técnico dentro de su red:<br/>
+        <ul>
+          <li>Configuración de Equipos, software, redes.</li>
+          <li>Mantenimiento de sistemas informáticos y redes.</li>
+          <li>Configuración de cuentas para nuevos usuarios.</li>
+          <li>Reparación o sustitución de equipos de computo.</li>
+          <li>Aplicación y modernización de red y configuración de equipos nuevos.</li>
+        </ul>
+        </p>
       </Tab>
     </Tabs>
 

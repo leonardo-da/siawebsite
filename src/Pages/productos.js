@@ -41,7 +41,7 @@ import MYT from '../assets/img/mouseytec.png';
 
 import CAM from '../assets/img/camaras1.png';
 import RED from '../assets/img/redes1.png';
-import SER from '../assets/img/servidor.png';
+import SER from '../assets/img/Servidor.png';
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
