@@ -1,4 +1,4 @@
-import { Form, Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -9,10 +9,13 @@ const App = () =>{
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_oiae3ze', 'template_awrxskm', form.current, '-mdxS7OkKvtzTf33a')
       .then((result) => {
           console.log(result.text);
-      }, (error) => {
+          document.getElementById("sd").value = '';
+          document.getElementById("sf").value = '';
+          document.getElementById("sg").value = '';
+        }, (error) => {
           console.log(error.text);
       });
   };
@@ -78,22 +81,32 @@ const App = () =>{
             </div>
             <div className="col-sm ">
               <h2 className="text-center mb-5">¿Como podemos ayudarte?</h2>
-              <Form ref={form} onSubmit={sendEmail}>
-                <Form.Group className="mb-3" controlId="formBasicEmail" name="user_name">
-                  <Form.Label>Nombre</Form.Label>
-                  <Form.Control/>
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword" name="user_email">
-                  <Form.Label>Correo</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" name="message">
-                  <Form.Label>Asunto</Form.Label>
-                  <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-                <Button variant="primary" type="submit" value="Send">Enviar</Button>
-              </Form>
+              <form ref={form} onSubmit={sendEmail}>
+                <div>
+                  <label>Nombre</label>
+                </div>
+                <div>
+                  <input id="sd" className="w-100 mt-2 py-1 px-2" type="text" name="user_name" required />
+                </div>
+
+                <div>
+                  <label className="mt-4">Correo</label>
+                </div>
+                <div>
+                  <input id="sf" className="w-100 mt-2 py-1 px-2" type="email" name="user_email" required/>
+                </div>
+
+                <div>
+                  <label className="mt-4">Asunto</label>
+                </div>
+                <div>
+                  <textarea id="sg" className="w-100 my-2 px-2" rows={4} name="message" required/>
+                </div>
+                <input className="rounded py-2 px-3 bg-primary border-0 text-white" type="submit" value="Enviar" />
+            </form>
             </div>
+
+            
           </div>
         </div>
       </div>

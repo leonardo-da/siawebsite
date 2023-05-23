@@ -67,7 +67,7 @@ const App = () => {
                   <Nav.Link className={`${pathname === '/Productos' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Productos">Productos</Nav.Link>
                   <Nav.Link className={`${pathname === '/Soporte' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Soporte">Soporte</Nav.Link>
                   <Nav.Link className={`${pathname === '/Contacto' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Contacto">Contacto</Nav.Link>
-                  <Nav.Link className={`${pathname === '/Avisodeprivacidad' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Avisodeprivacidad">Aviso de privacidad</Nav.Link>
+                  <Nav.Link className={`${pathname === '/Avisodeprivacidad' ? 'text-decoration-underline fw-bold' : 'text-decoration-none'}`} onClick={event => {toggleMenu();totop();}} as={Link} to="/Privacidad">Aviso de privacidad</Nav.Link>
                   <NavDropdown title="Ingresar" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                       <Form className="d-flex">
                         <Form.Control onChange={handleInputChange} name="password" placeholder="Contraseña" className="mx-2" type="password" />

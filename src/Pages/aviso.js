@@ -66,7 +66,7 @@ const App = () =>{
         </p>
         <p>
         <h2>¿Dónde puedo consultar el aviso de privacidad integral?</h2><br/>
-        Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral en: www.serviciosinformaticosdeags.com
+        Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral en: www.serviciosinformaticosdeags.com/Privacidad
         </p>
         </div>
       </>
