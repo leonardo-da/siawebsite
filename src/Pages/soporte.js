@@ -22,8 +22,8 @@ const App = () =>{
                 <Card.Text className="mb-4">
                   Soporte en remoto de ordenadores y otros dispositivos finales.
                 </Card.Text>
-                <Button variant="primary mx-2" href="https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe" target="_blank">Windows</Button>
-                <Button variant="primary mx-2" href="https://download.teamviewer.com/download/TeamViewer.dmg" target="_blank">Mac</Button>
+                <Button variant="primary mx-2" href="https://www.teamviewer.com/latam/download/windows/" target="_blank">Windows</Button>
+                <Button variant="primary mx-2" href="https://www.teamviewer.com/latam/download/macos/" target="_blank">Mac</Button>
               </Card.Body>
             </Card>
           <Card data-aos="zoom-in" style={{ width: '18rem' }} className="border-danger">
